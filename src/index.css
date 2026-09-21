@@ -1,0 +1,180 @@
+@import "tailwindcss";
+
+:root {
+  /* Restrained Clinical Luxury Color Palette */
+  --color-brand-primary: #0B4336;
+  --color-brand-dark: #07382D;
+  --color-brand-accent: #A8C99D;
+  --color-brand-accent-hover: #b8d8ac;
+  --color-surface-bg: #F7F8F4;
+  --color-surface-card: #FFFFFF;
+  --color-surface-muted: #F0F4F1;
+  --color-border-subtle: #E2E7E3;
+  --color-text-primary: #111714;
+  --color-text-secondary: #4E5651;
+  --color-text-muted: #717C75;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    touch-action: manipulation;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: var(--color-surface-bg);
+    color: var(--color-text-primary);
+    font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  a, button, input, select, textarea {
+    touch-action: manipulation;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Editorial Typography Accent */
+.font-editorial {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Component Design System Utilities */
+.btn-primary {
+  display: inline-flex;
+  items-center: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #0B4336;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.025em;
+  padding: 0.875rem 1.5rem;
+  border-radius: 0.75rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 3px rgba(11, 67, 54, 0.12);
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background-color: #07382D;
+  box-shadow: 0 4px 12px rgba(11, 67, 54, 0.22);
+  transform: translateY(-1px);
+}
+
+.btn-accent {
+  display: inline-flex;
+  items-center: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #A8C99D;
+  color: #07382D;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.025em;
+  padding: 0.875rem 1.5rem;
+  border-radius: 9999px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+.btn-accent:hover {
+  background-color: #b8d8ac;
+  box-shadow: 0 4px 14px rgba(168, 201, 157, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  display: inline-flex;
+  items-center: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: #111714;
+  border: 1px solid #DDE3DE;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 0.875rem 1.5rem;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.btn-outline:hover {
+  background-color: #FFFFFF;
+  border-color: #0B4336;
+  color: #0B4336;
+}
+
+/* Card Design Tokens */
+.card-premium {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E7E3;
+  border-radius: 1rem;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+}
+.card-premium:hover {
+  border-color: #0B4336;
+  box-shadow: 0 12px 24px -6px rgba(11, 67, 54, 0.08);
+}
+
+/* Reduced Motion Handling */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Inset Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(11, 67, 54, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(11, 67, 54, 0.4);
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(11, 67, 54, 0.25) transparent;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(11, 67, 54, 0.25);
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(11, 67, 54, 0.5);
+}
