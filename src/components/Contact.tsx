@@ -32,7 +32,7 @@ export const Contact: React.FC = () => {
               </div>
               <div className="space-y-1">
                 <h3 className="text-base font-bold text-[#111714]">Clinic Address</h3>
-                <p className="text-sm text-[#5D6661]">{clinicConfig.location.fullAddress}</p>
+                <address className="not-italic text-sm text-[#5D6661]">{clinicConfig.location.fullAddress}</address>
                 <a
                   href={clinicConfig.location.mapPlaceholderUrl}
                   target="_blank"

@@ -4,7 +4,7 @@ export const faqData: FAQItemData[] = [
   {
     id: 'faq-1',
     question: 'What should I expect during my first appointment?',
-    answer: 'During your initial assessment, Dr. Ananya Sharma will review your medical history, perform a comprehensive physical assessment (testing range of motion, muscle strength, and postural mechanics), discuss your personal goals, and formulate your customized rehabilitation plan.',
+    answer: 'During your initial assessment, Dr. Chandan Kumar will review your medical history, perform a comprehensive physical assessment (testing range of motion, muscle strength, and postural mechanics), discuss your personal goals, and formulate your customized rehabilitation plan.',
   },
   {
     id: 'faq-2',

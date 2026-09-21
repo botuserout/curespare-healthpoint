@@ -119,23 +119,28 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Legal & Copyright */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/60 gap-4">
-          <p>© {new Date().getFullYear()} {clinicConfig.name}. All rights reserved.</p>
+        <div className="pt-8 border-t border-white/5 flex flex-col gap-4">
+          <p className="text-[11px] text-white/50 leading-relaxed text-center sm:text-left">
+            <strong className="text-white/70 font-semibold">Medical Disclaimer:</strong> The information provided on this website is for educational and appointment booking purposes only and does not substitute professional medical advice, diagnosis, or treatment. Always consult Dr. Chandan Kumar or a qualified healthcare provider for personalized medical evaluation.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-between text-xs text-white/60 gap-4 pt-2">
+            <p>© {new Date().getFullYear()} {clinicConfig.name} ({clinicConfig.location.fullAddress}). All rights reserved.</p>
 
-          <div className="flex items-center gap-6">
-            <button
-              onClick={() => setLegalType('privacy')}
-              className="hover:text-[#A8C99D] transition-colors focus:outline-none"
-            >
-              Privacy Policy
-            </button>
-            <span>•</span>
-            <button
-              onClick={() => setLegalType('terms')}
-              className="hover:text-[#A8C99D] transition-colors focus:outline-none"
-            >
-              Terms & Conditions
-            </button>
+            <div className="flex items-center gap-6">
+              <button
+                onClick={() => setLegalType('privacy')}
+                className="hover:text-[#A8C99D] transition-colors focus:outline-none"
+              >
+                Privacy Policy
+              </button>
+              <span>•</span>
+              <button
+                onClick={() => setLegalType('terms')}
+                className="hover:text-[#A8C99D] transition-colors focus:outline-none"
+              >
+                Terms & Conditions
+              </button>
+            </div>
           </div>
         </div>
 

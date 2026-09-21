@@ -24,7 +24,7 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
               <div className="rounded-2xl overflow-hidden shadow-xl border border-[#DDE3DE] bg-[#07382D] relative">
                 <img
                   src={doctor.imageUrl}
-                  alt={doctor.name}
+                  alt={`${doctor.name}, Senior Consultant Physiotherapist & Neuro-Rehab Specialist in Cuttack`}
                   className="w-full h-[450px] sm:h-[500px] object-cover object-top opacity-95"
                 />
 
@@ -32,7 +32,7 @@ export const About: React.FC<AboutProps> = ({ onOpenBooking }) => {
                 <div className="absolute top-4 left-4 p-2.5 rounded-2xl bg-black/75 backdrop-blur-md border border-white/20 flex items-center gap-3 shadow-lg">
                   <img
                     src={clinicConfig.logoUrl}
-                    alt={clinicConfig.name}
+                    alt={`${clinicConfig.name} logo - Physiotherapy & Rehabilitation Cuttack`}
                     className="w-10 h-10 rounded-full object-cover border border-[#A8C99D]"
                   />
                   <div>

@@ -32,9 +32,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
 
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.15] text-white">
-              Move Better.{' '}
-              <span className="font-editorial italic font-normal text-[#A8C99D] block sm:inline">
-                Live Stronger.
+              Physiotherapy & Neuro-Rehabilitation in Cuttack
+              <span className="font-editorial italic font-normal text-[#A8C99D] block text-2xl sm:text-3xl font-sans mt-2">
+                Move Better. Live Stronger.
               </span>
             </h1>
 
@@ -69,17 +69,17 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                   <img
                     className="inline-block h-8 w-8 rounded-full ring-2 ring-[#0B4336] object-cover"
                     src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
-                    alt="Patient avatar"
+                    alt="Recovered physiotherapy patient review"
                   />
                   <img
                     className="inline-block h-8 w-8 rounded-full ring-2 ring-[#0B4336] object-cover"
                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
-                    alt="Patient avatar"
+                    alt="Neuro rehabilitation patient avatar"
                   />
                   <img
                     className="inline-block h-8 w-8 rounded-full ring-2 ring-[#0B4336] object-cover"
                     src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80"
-                    alt="Patient avatar"
+                    alt="Sports injury rehabilitation patient avatar"
                   />
                 </div>
                 <div className="flex flex-col">
@@ -117,7 +117,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/15 bg-[#07382D]">
                 <img
                   src={clinicConfig.physiotherapist.heroImageUrl || clinicConfig.physiotherapist.imageUrl}
-                  alt={clinicConfig.physiotherapist.name}
+                  alt={`${clinicConfig.physiotherapist.name} - Senior Consultant Physiotherapist in Cuttack`}
+                  loading="eager"
+                  fetchPriority="high"
                   className="w-full h-[420px] sm:h-[480px] object-cover object-top transform hover:scale-105 transition-transform duration-700"
                 />
                 

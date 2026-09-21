@@ -1,0 +1,12 @@
+# Robots.txt for CureSpare HealthPoint Physiotherapy & Rehabilitation Centre
+# https://curesparehealthpoint.com
+
+User-agent: *
+Allow: /
+
+# Disallow private assets or admin endpoints if any
+Disallow: /admin
+Disallow: /api/
+
+# Sitemap Location
+Sitemap: https://curesparehealthpoint.com/sitemap.xml
